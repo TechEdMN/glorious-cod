@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - AstroydsAI</title>
+    
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-['Inter']">
+    
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="logo-container">
+                    <a href="index.html" class="text-2xl font-bold font-['Space_Grotesk'] flex items-center">
+                        <span class="gradient-text">Astroyds</span><span class="text-purple-400">AI</span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link active">About</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <button class="btn-primary">Get Started</button>
+                </div>
+                
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 bg-opacity-95 backdrop-blur-lg">
+            <div class="container mx-auto px-6 py-4 space-y-4">
+                <a href="index.html" class="block nav-link">Home</a>
+                <a href="about.html" class="block nav-link">About</a>
+                <a href="services.html" class="block nav-link">Services</a>
+                <a href="contact.html" class="block nav-link">Contact</a>
+                <button class="btn-primary w-full">Get Started</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="stars"></div>
+            <div class="twinkling"></div>
+            <div class="gradient-overlay"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center max-w-4xl mx-auto mb-20">
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 font-['Space_Grotesk'] fade-in-up">
+                    About <span class="gradient-text">AstroydsAI</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 fade-in-up delay-1">
+                    Pioneering the future of artificial intelligence to empower humanity and drive innovation across the globe.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="reveal">
+                    <div class="glass p-8 rounded-2xl">
+                        <div class="text-6xl mb-6">🎯</div>
+                        <h2 class="text-3xl font-bold mb-4 font-['Space_Grotesk']">Our Mission</h2>
+                        <p class="text-gray-300 text-lg leading-relaxed">
+                            To democratize artificial intelligence and make cutting-edge AI technology accessible to everyone. 
+                            We believe AI should empower humanity, not replace it. Our mission is to build intelligent systems 
+                            that augment human capabilities and solve real-world problems.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="reveal delay-1">
+                    <div class="glass p-8 rounded-2xl">
+                        <div class="text-6xl mb-6">🚀</div>
+                        <h2 class="text-3xl font-bold mb-4 font-['Space_Grotesk']">Our Vision</h2>
+                        <p class="text-gray-300 text-lg leading-relaxed">
+                            A world where AI technology seamlessly integrates into daily life, enhancing productivity, 
+                            creativity, and innovation. We envision a future where businesses of all sizes can leverage 
+                            the power of AI to achieve unprecedented growth and efficiency.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Timeline -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 font-['Space_Grotesk']">
+                    Our <span class="gradient-text">Journey</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    From a bold idea to a global AI powerhouse
+                </p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="text-2xl font-bold mb-2">2020 - The Beginning</h3>
+                        <p class="text-gray-400">
+                            Founded by a team of AI researchers and entrepreneurs with a vision to make AI accessible to all.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item reveal delay-1">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="text-2xl font-bold mb-2">2021 - First Product Launch</h3>
+                        <p class="text-gray-400">
+                            Released our first AI model, serving over 100 companies in the first quarter.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item reveal delay-2">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="text-2xl font-bold mb-2">2022 - Global Expansion</h3>
+                        <p class="text-gray-400">
+                            Expanded operations to 15 countries, serving Fortune 500 companies worldwide.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item reveal delay-3">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="text-2xl font-bold mb-2">2023 - Innovation Awards</h3>
+                        <p class="text-gray-400">
+                            Recognized as "Most Innovative AI Company" by leading tech publications.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="text-2xl font-bold mb-2">2024 - Future Forward</h3>
+                        <p class="text-gray-400">
+                            Continuing to push boundaries with next-generation AI models and expanding our team globally.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-purple-900/20 to-blue-900/20"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 font-['Space_Grotesk']">
+                    Our <span class="gradient-text">Values</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    The principles that guide everything we do
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="feature-card reveal">
+                    <div class="text-5xl mb-4">💡</div>
+                    <h3 class="text-2xl font-bold mb-4">Innovation</h3>
+                    <p class="text-gray-400">
+                        We constantly push the boundaries of what's possible, embracing new ideas and technologies.
+                    </p>
+                </div>
+                
+                <div class="feature-card reveal delay-1">
+                    <div class="text-5xl mb-4">🤝</div>
+                    <h3 class="text-2xl font-bold mb-4">Collaboration</h3>
+                    <p class="text-gray-400">
+                        We believe the best solutions come from diverse teams working together towards a common goal.
+                    </p>
+                </div>
+                
+                <div class="feature-card reveal delay-2">
+                    <div class="text-5xl mb-4">🎯</div>
+                    <h3 class="text-2xl font-bold mb-4">Excellence</h3>
+                    <p class="text-gray-400">
+                        We maintain the highest standards in everything we do, from code quality to customer service.
+                    </p>
+                </div>
+                
+                <div class="feature-card reveal delay-3">
+                    <div class="text-5xl mb-4">🌍</div>
+                    <h3 class="text-2xl font-bold mb-4">Impact</h3>
+                    <p class="text-gray-400">
+                        We measure our success by the positive impact we make on businesses and communities worldwide.
+                    </p>
+                </div>
+                
+                <div class="feature-card reveal">
+                    <div class="text-5xl mb-4">🔒</div>
+                    <h3 class="text-2xl font-bold mb-4">Trust</h3>
+                    <p class="text-gray-400">
+                        We build products with security, privacy, and transparency at their core.
+                    </p>
+                </div>
+                
+                <div class="feature-card reveal delay-1">
+                    <div class="text-5xl mb-4">🚀</div>
+                    <h3 class="text-2xl font-bold mb-4">Growth</h3>
+                    <p class="text-gray-400">
+                        We foster continuous learning and development for our team and our clients.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 font-['Space_Grotesk']">
+                    Meet Our <span class="gradient-text">Team</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Brilliant minds working together to shape the future of AI
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="team-card reveal">
+                    <div class="team-avatar">AS</div>
+                    <h3 class="text-xl font-bold mb-2">Alex Stone</h3>
+                    <p class="text-purple-400 mb-3">CEO & Co-Founder</p>
+                    <p class="text-gray-400 text-sm">
+                        Visionary leader with 15+ years in AI research and development.
+                    </p>
+                </div>
+                
+                <div class="team-card reveal delay-1">
+                    <div class="team-avatar">SC</div>
+                    <h3 class="text-xl font-bold mb-2">Sarah Chen</h3>
+                    <p class="text-purple-400 mb-3">CTO</p>
+                    <p class="text-gray-400 text-sm">
+                        Machine learning expert and former Google AI researcher.
+                    </p>
+                </div>
+                
+                <div class="team-card reveal delay-2">
+                    <div class="team-avatar">MP</div>
+                    <h3 class="text-xl font-bold mb-2">Michael Park</h3>
+                    <p class="text-purple-400 mb-3">Head of Research</p>
+                    <p class="text-gray-400 text-sm">
+                        PhD in Computer Science, published 50+ papers on AI.
+                    </p>
+                </div>
+                
+                <div class="team-card reveal delay-3">
+                    <div class="team-avatar">ER</div>
+                    <h3 class="text-xl font-bold mb-2">Emma Rodriguez</h3>
+                    <p class="text-purple-400 mb-3">Head of Product</p>
+                    <p class="text-gray-400 text-sm">
+                        Product strategist with a passion for user-centric AI.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-blue-600/20"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center max-w-3xl mx-auto reveal">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 font-['Space_Grotesk']">
+                    Join Us on This Journey
+                </h2>
+                <p class="text-xl text-gray-300 mb-8">
+                    Be part of the AI revolution. Whether you're looking to transform your business or join our team, we'd love to hear from you.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="btn-primary text-lg px-8 py-4">
+                        Get in Touch
+                    </a>
+                    <a href="services.html" class="btn-secondary text-lg px-8 py-4">
+                        Explore Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 py-12 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 font-['Space_Grotesk']">
+                        <span class="gradient-text">Astroyds</span><span class="text-purple-400">AI</span>
+                    </h3>
+                    <p class="text-gray-400">
+                        Building AI models that empower humanity to achieve more.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Press</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">API Reference</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Support</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Connect</h4>
+                    <ul class="space-y-2">
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Twitter</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">LinkedIn</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2024 AstroydsAI. All rights reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

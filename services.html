@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - AstroydsAI</title>
+    
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-['Inter']">
+    
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="logo-container">
+                    <a href="index.html" class="text-2xl font-bold font-['Space_Grotesk'] flex items-center">
+                        <span class="gradient-text">Astroyds</span><span class="text-purple-400">AI</span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="services.html" class="nav-link active">Services</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <button class="btn-primary">Get Started</button>
+                </div>
+                
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 bg-opacity-95 backdrop-blur-lg">
+            <div class="container mx-auto px-6 py-4 space-y-4">
+                <a href="index.html" class="block nav-link">Home</a>
+                <a href="about.html" class="block nav-link">About</a>
+                <a href="services.html" class="block nav-link">Services</a>
+                <a href="contact.html" class="block nav-link">Contact</a>
+                <button class="btn-primary w-full">Get Started</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="stars"></div>
+            <div class="twinkling"></div>
+            <div class="gradient-overlay"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center max-w-4xl mx-auto mb-20">
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 font-['Space_Grotesk'] fade-in-up">
+                    Our <span class="gradient-text">Services</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 fade-in-up delay-1">
+                    Comprehensive AI solutions designed to transform your business and accelerate growth.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Natural Language Processing -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-4 font-['Space_Grotesk']">Natural Language Processing</h3>
+                    <p class="text-gray-400 mb-6 text-lg">
+                        Transform text data into actionable insights with our advanced NLP models.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>Sentiment analysis and opinion mining</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>Text classification and categorization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>Named entity recognition</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>Language translation and localization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>Chatbots and conversational AI</span>
+                        </li>
+                    </ul>
+                    <button class="btn-primary">Learn More</button>
+                </div>
+                
+                <!-- Computer Vision -->
+                <div class="service-card reveal delay-1">
+                    <div class="service-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-4 font-['Space_Grotesk']">Computer Vision</h3>
+                    <p class="text-gray-400 mb-6 text-lg">
+                        Enable machines to interpret and understand visual information from the world.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>Object detection and recognition</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>Facial recognition and biometric systems</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>Image and video analysis</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>Autonomous systems and robotics</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>Medical imaging and diagnostics</span>
+                        </li>
+                    </ul>
+                    <button class="btn-primary">Learn More</button>
+                </div>
+                
+                <!-- Predictive Analytics -->
+                <div class="service-card reveal delay-2">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-4 font-['Space_Grotesk']">Predictive Analytics</h3>
+                    <p class="text-gray-400 mb-6 text-lg">
+                        Forecast trends and make data-driven decisions with machine learning.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>Sales forecasting and demand prediction</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>Customer churn prediction</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>Risk assessment and fraud detection</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>Market trend analysis</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>Predictive maintenance</span>
+                        </li>
+                    </ul>
+                    <button class="btn-primary">Learn More</button>
+                </div>
+                
+                <!-- Custom AI Solutions -->
+                <div class="service-card reveal delay-3">
+                    <div class="service-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-4 font-['Space_Grotesk']">Custom AI Solutions</h3>
+                    <p class="text-gray-400 mb-6 text-lg">
+                        Tailored AI models designed specifically for your unique business needs.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>Personalized model development</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>AI strategy consulting</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>Data pipeline optimization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>Model deployment and scaling</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>Ongoing support and maintenance</span>
+                        </li>
+                    </ul>
+                    <button class="btn-primary">Learn More</button>
+                </div>
+                
+                <!-- Recommendation Systems -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-4 font-['Space_Grotesk']">Recommendation Systems</h3>
+                    <p class="text-gray-400 mb-6 text-lg">
+                        Deliver personalized experiences with intelligent recommendation engines.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>Product recommendations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>Content personalization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>Collaborative filtering</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>Real-time recommendations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>A/B testing and optimization</span>
+                        </li>
+                    </ul>
+                    <button class="btn-primary">Learn More</button>
+                </div>
+                
+                <!-- Deep Learning -->
+                <div class="service-card reveal delay-1">
+                    <div class="service-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-4 font-['Space_Grotesk']">Deep Learning</h3>
+                    <p class="text-gray-400 mb-6 text-lg">
+                        Harness the power of neural networks for complex problem-solving.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>Neural network architecture design</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>Transfer learning implementation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>Generative AI models</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>Reinforcement learning</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-400 mt-1 mr-3"></i>
+                            <span>Model optimization and compression</span>
+                        </li>
+                    </ul>
+                    <button class="btn-primary">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries We Serve -->
+    <section class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-purple-900/20 to-blue-900/20"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 font-['Space_Grotesk']">
+                    Industries We <span class="gradient-text">Serve</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    AI solutions tailored for diverse industries
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="feature-card reveal text-center">
+                    <div class="text-5xl mb-4">🏥</div>
+                    <h3 class="text-xl font-bold">Healthcare</h3>
+                </div>
+                
+                <div class="feature-card reveal delay-1 text-center">
+                    <div class="text-5xl mb-4">💰</div>
+                    <h3 class="text-xl font-bold">Finance</h3>
+                </div>
+                
+                <div class="feature-card reveal delay-2 text-center">
+                    <div class="text-5xl mb-4">🛒</div>
+                    <h3 class="text-xl font-bold">E-commerce</h3>
+                </div>
+                
+                <div class="feature-card reveal delay-3 text-center">
+                    <div class="text-5xl mb-4">🏭</div>
+                    <h3 class="text-xl font-bold">Manufacturing</h3>
+                </div>
+                
+                <div class="feature-card reveal text-center">
+                    <div class="text-5xl mb-4">📱</div>
+                    <h3 class="text-xl font-bold">Technology</h3>
+                </div>
+                
+                <div class="feature-card reveal delay-1 text-center">
+                    <div class="text-5xl mb-4">🎓</div>
+                    <h3 class="text-xl font-bold">Education</h3>
+                </div>
+                
+                <div class="feature-card reveal delay-2 text-center">
+                    <div class="text-5xl mb-4">🚗</div>
+                    <h3 class="text-xl font-bold">Automotive</h3>
+                </div>
+                
+                <div class="feature-card reveal delay-3 text-center">
+                    <div class="text-5xl mb-4">🏠</div>
+                    <h3 class="text-xl font-bold">Real Estate</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 font-['Space_Grotesk']">
+                    Our <span class="gradient-text">Process</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    A proven methodology for delivering exceptional AI solutions
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center reveal">
+                    <div class="w-20 h-20 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-6">
+                        1
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Discovery</h3>
+                    <p class="text-gray-400">
+                        We analyze your business needs and identify AI opportunities.
+                    </p>
+                </div>
+                
+                <div class="text-center reveal delay-1">
+                    <div class="w-20 h-20 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-6">
+                        2
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Design</h3>
+                    <p class="text-gray-400">
+                        We create a custom AI strategy and architecture tailored to your goals.
+                    </p>
+                </div>
+                
+                <div class="text-center reveal delay-2">
+                    <div class="w-20 h-20 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-6">
+                        3
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Development</h3>
+                    <p class="text-gray-400">
+                        We build, train, and optimize your AI models with cutting-edge technology.
+                    </p>
+                </div>
+                
+                <div class="text-center reveal delay-3">
+                    <div class="w-20 h-20 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-6">
+                        4
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Deploy</h3>
+                    <p class="text-gray-400">
+                        We launch your AI solution and provide ongoing support and optimization.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-blue-600/20"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center max-w-3xl mx-auto reveal">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 font-['Space_Grotesk']">
+                    Ready to Get Started?
+                </h2>
+                <p class="text-xl text-gray-300 mb-8">
+                    Let's discuss how our AI solutions can transform your business and drive growth.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="btn-primary text-lg px-8 py-4">
+                        Contact Us
+                    </a>
+                    <button class="btn-secondary text-lg px-8 py-4">
+                        Schedule Consultation
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 py-12 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 font-['Space_Grotesk']">
+                        <span class="gradient-text">Astroyds</span><span class="text-purple-400">AI</span>
+                    </h3>
+                    <p class="text-gray-400">
+                        Building AI models that empower humanity to achieve more.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Press</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">API Reference</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Support</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Connect</h4>
+                    <ul class="space-y-2">
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Twitter</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">LinkedIn</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2024 AstroydsAI. All rights reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

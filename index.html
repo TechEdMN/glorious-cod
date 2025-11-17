@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroydsAI - AI Models for Humanity</title>
+    
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-['Inter']">
+    
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="logo-container">
+                    <a href="index.html" class="text-2xl font-bold font-['Space_Grotesk'] flex items-center">
+                        <span class="gradient-text">Astroyds</span><span class="text-purple-400">AI</span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <button class="btn-primary">Get Started</button>
+                </div>
+                
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 bg-opacity-95 backdrop-blur-lg">
+            <div class="container mx-auto px-6 py-4 space-y-4">
+                <a href="index.html" class="block nav-link">Home</a>
+                <a href="about.html" class="block nav-link">About</a>
+                <a href="services.html" class="block nav-link">Services</a>
+                <a href="contact.html" class="block nav-link">Contact</a>
+                <button class="btn-primary w-full">Get Started</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Animated Background -->
+        <div class="absolute inset-0 z-0">
+            <div class="stars"></div>
+            <div class="twinkling"></div>
+            <div class="gradient-overlay"></div>
+        </div>
+        
+        <!-- Floating Particles -->
+        <canvas id="particles-canvas" class="absolute inset-0 z-10"></canvas>
+        
+        <!-- Hero Content -->
+        <div class="container mx-auto px-6 z-20 relative">
+            <div class="text-center max-w-5xl mx-auto">
+                <h1 class="hero-title text-5xl md:text-7xl lg:text-8xl font-bold mb-6 font-['Space_Grotesk']">
+                    <span class="inline-block fade-in-up">Empowering</span>
+                    <span class="inline-block fade-in-up delay-1">Humanity</span>
+                    <span class="inline-block fade-in-up delay-2">with</span>
+                    <br>
+                    <span class="gradient-text inline-block fade-in-up delay-3">AI Intelligence</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-gray-300 mb-12 fade-in-up delay-4 max-w-3xl mx-auto">
+                    We build cutting-edge AI models that unlock human potential and drive innovation across industries.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in-up delay-5">
+                    <button class="btn-primary text-lg px-8 py-4">
+                        Explore Our Solutions
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                    <button class="btn-secondary text-lg px-8 py-4">
+                        Learn More
+                        <i class="fas fa-play ml-2"></i>
+                    </button>
+                </div>
+                
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator mt-20">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <p class="text-sm text-gray-400 mt-4">Scroll to explore</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 font-['Space_Grotesk']">
+                    Why Choose <span class="gradient-text">AstroydsAI</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Leading the future of artificial intelligence with innovation and excellence
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="feature-card reveal delay-1">
+                    <div class="icon-container">
+                        <i class="fas fa-brain text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Advanced AI Models</h3>
+                    <p class="text-gray-400">
+                        State-of-the-art machine learning models trained on diverse datasets to solve complex problems.
+                    </p>
+                </div>
+                
+                <div class="feature-card reveal delay-2">
+                    <div class="icon-container">
+                        <i class="fas fa-rocket text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Lightning Fast</h3>
+                    <p class="text-gray-400">
+                        Optimized for performance with cutting-edge infrastructure and real-time processing capabilities.
+                    </p>
+                </div>
+                
+                <div class="feature-card reveal delay-3">
+                    <div class="icon-container">
+                        <i class="fas fa-shield-alt text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Secure & Reliable</h3>
+                    <p class="text-gray-400">
+                        Enterprise-grade security with 99.9% uptime guarantee and robust data protection.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-purple-900/20 to-blue-900/20"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div class="stat-card reveal">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">AI Models Deployed</div>
+                </div>
+                <div class="stat-card reveal delay-1">
+                    <div class="stat-number" data-target="1000">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-card reveal delay-2">
+                    <div class="stat-number" data-target="99">0</div>
+                    <div class="stat-label">Accuracy Rate</div>
+                </div>
+                <div class="stat-card reveal delay-3">
+                    <div class="stat-number" data-target="24">0</div>
+                    <div class="stat-label">Countries Served</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section id="services-preview" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 font-['Space_Grotesk']">
+                    Our <span class="gradient-text">Solutions</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Comprehensive AI solutions tailored to your industry needs
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Natural Language Processing</h3>
+                    <p class="text-gray-400 mb-6">
+                        Transform text data into actionable insights with our advanced NLP models.
+                    </p>
+                    <a href="services.html" class="text-purple-400 hover:text-purple-300 transition-colors">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card reveal delay-1">
+                    <div class="service-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Computer Vision</h3>
+                    <p class="text-gray-400 mb-6">
+                        Enable machines to interpret and understand visual information from the world.
+                    </p>
+                    <a href="services.html" class="text-purple-400 hover:text-purple-300 transition-colors">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card reveal delay-2">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Predictive Analytics</h3>
+                    <p class="text-gray-400 mb-6">
+                        Forecast trends and make data-driven decisions with machine learning.
+                    </p>
+                    <a href="services.html" class="text-purple-400 hover:text-purple-300 transition-colors">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card reveal delay-3">
+                    <div class="service-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Custom AI Solutions</h3>
+                    <p class="text-gray-400 mb-6">
+                        Tailored AI models designed specifically for your unique business needs.
+                    </p>
+                    <a href="services.html" class="text-purple-400 hover:text-purple-300 transition-colors">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-blue-600/20"></div>
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjAzKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-40"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center max-w-3xl mx-auto reveal">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 font-['Space_Grotesk']">
+                    Ready to Transform Your Business?
+                </h2>
+                <p class="text-xl text-gray-300 mb-8">
+                    Join hundreds of companies leveraging AI to accelerate growth and innovation.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="btn-primary text-lg px-8 py-4">
+                        Start Free Trial
+                    </button>
+                    <button class="btn-secondary text-lg px-8 py-4">
+                        Schedule Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 py-12 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 font-['Space_Grotesk']">
+                        <span class="gradient-text">Astroyds</span><span class="text-purple-400">AI</span>
+                    </h3>
+                    <p class="text-gray-400">
+                        Building AI models that empower humanity to achieve more.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Press</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">API Reference</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Support</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Connect</h4>
+                    <ul class="space-y-2">
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Twitter</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">LinkedIn</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2024 AstroydsAI. All rights reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
