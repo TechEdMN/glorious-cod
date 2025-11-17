@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AstroydsAI</title>
+    
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-['Inter']">
+    
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="logo-container">
+                    <a href="index.html" class="text-2xl font-bold font-['Space_Grotesk'] flex items-center">
+                        <span class="gradient-text">Astroyds</span><span class="text-purple-400">AI</span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                    <button class="btn-primary">Get Started</button>
+                </div>
+                
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 bg-opacity-95 backdrop-blur-lg">
+            <div class="container mx-auto px-6 py-4 space-y-4">
+                <a href="index.html" class="block nav-link">Home</a>
+                <a href="about.html" class="block nav-link">About</a>
+                <a href="services.html" class="block nav-link">Services</a>
+                <a href="contact.html" class="block nav-link">Contact</a>
+                <button class="btn-primary w-full">Get Started</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="stars"></div>
+            <div class="twinkling"></div>
+            <div class="gradient-overlay"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center max-w-4xl mx-auto mb-20">
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 font-['Space_Grotesk'] fade-in-up">
+                    Get in <span class="gradient-text">Touch</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 fade-in-up delay-1">
+                    Let's discuss how we can help transform your business with AI.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div class="reveal">
+                    <h2 class="text-3xl font-bold mb-8 font-['Space_Grotesk']">
+                        Contact <span class="gradient-text">Information</span>
+                    </h2>
+                    
+                    <div class="space-y-6 mb-12">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-1">Address</h3>
+                                <p class="text-gray-400">123 AI Innovation Drive<br>San Francisco, CA 94102</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-1">Email</h3>
+                                <p class="text-gray-400">hello@astroydsai.com<br>support@astroydsai.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-phone text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-1">Phone</h3>
+                                <p class="text-gray-400">+1 (555) 123-4567<br>+1 (555) 987-6543</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-clock text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-1">Business Hours</h3>
+                                <p class="text-gray-400">Monday - Friday: 9:00 AM - 6:00 PM PST<br>Saturday: 10:00 AM - 4:00 PM PST</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div>
+                        <h3 class="font-bold mb-4">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg flex items-center justify-center hover:scale-110 transition-transform">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg flex items-center justify-center hover:scale-110 transition-transform">
+                                <i class="fab fa-linkedin text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg flex items-center justify-center hover:scale-110 transition-transform">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg flex items-center justify-center hover:scale-110 transition-transform">
+                                <i class="fab fa-youtube text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="reveal delay-1">
+                    <div class="glass p-8 rounded-2xl">
+                        <h2 class="text-3xl font-bold mb-6 font-['Space_Grotesk']">
+                            Send us a <span class="gradient-text">Message</span>
+                        </h2>
+                        
+                        <form id="contact-form" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium mb-2">Full Name *</label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    required
+                                    class="form-input"
+                                    placeholder="John Doe"
+                                >
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium mb-2">Email Address *</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    required
+                                    class="form-input"
+                                    placeholder="john@example.com"
+                                >
+                            </div>
+                            
+                            <div>
+                                <label for="company" class="block text-sm font-medium mb-2">Company</label>
+                                <input 
+                                    type="text" 
+                                    id="company" 
+                                    name="company"
+                                    class="form-input"
+                                    placeholder="Your Company Name"
+                                >
+                            </div>
+                            
+                            <div>
+                                <label for="subject" class="block text-sm font-medium mb-2">Subject *</label>
+                                <input 
+                                    type="text" 
+                                    id="subject" 
+                                    name="subject" 
+                                    required
+                                    class="form-input"
+                                    placeholder="How can we help?"
+                                >
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium mb-2">Message *</label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    required
+                                    class="form-textarea"
+                                    placeholder="Tell us more about your project..."
+                                ></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary w-full text-lg">
+                                Send Message
+                                <i class="fas fa-paper-plane ml-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-purple-900/20 to-blue-900/20"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 font-['Space_Grotesk']">
+                    Frequently Asked <span class="gradient-text">Questions</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Quick answers to common questions
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="glass p-6 rounded-xl reveal">
+                    <h3 class="text-xl font-bold mb-3 flex items-center">
+                        <i class="fas fa-question-circle text-purple-400 mr-3"></i>
+                        How long does it take to implement an AI solution?
+                    </h3>
+                    <p class="text-gray-400 ml-8">
+                        Implementation timelines vary based on project complexity. Simple models can be deployed in 2-4 weeks, 
+                        while comprehensive custom solutions may take 3-6 months. We'll provide a detailed timeline during our initial consultation.
+                    </p>
+                </div>
+                
+                <div class="glass p-6 rounded-xl reveal delay-1">
+                    <h3 class="text-xl font-bold mb-3 flex items-center">
+                        <i class="fas fa-question-circle text-purple-400 mr-3"></i>
+                        What kind of support do you offer?
+                    </h3>
+                    <p class="text-gray-400 ml-8">
+                        We provide 24/7 technical support, regular model updates, performance monitoring, and ongoing optimization. 
+                        Our team is always available to ensure your AI solutions run smoothly.
+                    </p>
+                </div>
+                
+                <div class="glass p-6 rounded-xl reveal delay-2">
+                    <h3 class="text-xl font-bold mb-3 flex items-center">
+                        <i class="fas fa-question-circle text-purple-400 mr-3"></i>
+                        Do you work with small businesses?
+                    </h3>
+                    <p class="text-gray-400 ml-8">
+                        Absolutely! We work with businesses of all sizes, from startups to Fortune 500 companies. 
+                        We offer scalable solutions that grow with your business needs and budget.
+                    </p>
+                </div>
+                
+                <div class="glass p-6 rounded-xl reveal delay-3">
+                    <h3 class="text-xl font-bold mb-3 flex items-center">
+                        <i class="fas fa-question-circle text-purple-400 mr-3"></i>
+                        How do you ensure data security?
+                    </h3>
+                    <p class="text-gray-400 ml-8">
+                        We implement enterprise-grade security measures including encryption, secure data storage, 
+                        compliance with GDPR and other regulations, and regular security audits. Your data privacy is our top priority.
+                    </p>
+                </div>
+                
+                <div class="glass p-6 rounded-xl reveal">
+                    <h3 class="text-xl font-bold mb-3 flex items-center">
+                        <i class="fas fa-question-circle text-purple-400 mr-3"></i>
+                        Can I integrate AI into my existing systems?
+                    </h3>
+                    <p class="text-gray-400 ml-8">
+                        Yes! Our solutions are designed to integrate seamlessly with existing infrastructure. 
+                        We work with various platforms and technologies to ensure smooth integration with minimal disruption.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section (Decorative) -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="glass p-8 rounded-2xl reveal">
+                <h2 class="text-3xl font-bold mb-6 text-center font-['Space_Grotesk']">
+                    Visit Our <span class="gradient-text">Office</span>
+                </h2>
+                <div class="aspect-video bg-gradient-to-r from-purple-900/20 to-blue-900/20 rounded-xl flex items-center justify-center">
+                    <div class="text-center">
+                        <i class="fas fa-map-marked-alt text-6xl text-purple-400 mb-4"></i>
+                        <p class="text-xl text-gray-300">San Francisco, CA</p>
+                        <p class="text-gray-400 mt-2">Interactive map would be integrated here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 py-12 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 font-['Space_Grotesk']">
+                        <span class="gradient-text">Astroyds</span><span class="text-purple-400">AI</span>
+                    </h3>
+                    <p class="text-gray-400">
+                        Building AI models that empower humanity to achieve more.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Press</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">API Reference</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Support</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Connect</h4>
+                    <ul class="space-y-2">
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Twitter</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">LinkedIn</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2024 AstroydsAI. All rights reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
